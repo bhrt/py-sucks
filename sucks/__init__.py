@@ -464,7 +464,7 @@ class EcoVacsXMPP(ClientXMPP):
             return
 
         result['event'] = result.pop('td')
-        if xml:
+        if len(xml):
             result.update(xml[0].attrib)
 
         for key in result:
